@@ -1,14 +1,12 @@
 # The-Riddler-08-21-20
-Code for FiveThirtyEight's The Riddler from August 21, 2020
+Code for FiveThirtyEight's Riddler Classic from August 21, 2020
 
-####Classic####
+## Defining Terms
+#Let f be the perimeter of the fabric in m and the weight of the fabric in kg (max 1)
+#Let k be the weight of each individual post
+#Let T be total weight (f+k) <= 1
 
-## Let f be the perimeter of the fabric in m and the weight of the fabric in kg (max 1)
-## Let k be the weight of each individual post
-## Let T be total weight (f+k) <= 1
-
-## You want to maximize area while keeping weight under 1kg.
-
+## When k=.2:
 k <- .2
 
 ## Say there are 3 posts
@@ -33,12 +31,11 @@ A4 <- function(k) { ## Finding the area of square for any value of k
 }
 A4(.2)
 
+## Applying A3 & A4 to different values of k
 ks <- seq(.001, 1, by=.001)
 (A <- matrix(c(sapply(ks, A3), sapply(ks, A4)), ncol=2))
-## Applying A3 & A4 to different values of k
 max(which(A[,2] > A[,1]))
 
 A3(.089); A4(.089)
 A3(.090); A4(.090)
-## So 0.089 is the greatest value of k for which you should use 4 points
-##    instead of 3.
+## So 0.089 is the greatest value of k for which you should use 4 points instead of 3.
