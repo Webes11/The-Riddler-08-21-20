@@ -38,5 +38,4 @@ max(which(A[,2] > A[,1]))
 
 A3(.089); A4(.089)
 A3(.090); A4(.090)
-## So 0.089 is the greatest value of k for which you should use 4 points
-##    instead of 3.
+## So 0.089 is the greatest value of k for which you should use 4 points instead of 3.
