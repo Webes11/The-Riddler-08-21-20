@@ -9,11 +9,11 @@ Code for FiveThirtyEight's Riddler Classic from August 21, 2020
 ## When k=.2:
 k <- .2
 
-## Say there are 3 posts
+# Say there are 3 posts
 (f = 1-3*k)
 (A = .5 * f/3 * f/3/2*sqrt(3))
 
-## Say there are 4 posts
+# Say there are 4 posts
 (f = 1 - 4*k)
 (A = (f/4)^2)
 
